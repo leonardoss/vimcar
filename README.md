@@ -1,16 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-----------------
-# VimCar - Interview Technical test
+# VimCar - Frontend Technical test
 
 Application created to Frontend Technical test of VimCar
 
@@ -46,17 +34,17 @@ Test coverage
 ```
 $ yarn test:coverage
 ```
-The application will be avaible on: http://localhost:3000
+The application will be available on: http://localhost:3000
 
 ### Considerations
 #### About the app
 - I tried to use stateless components as much as possible, they're easy to read, debug and test.
-- I used an approach more close to Atomic design in terms of connect componets to Store. I decided to connect only Home and spread props along the component tree. I like this approach because makes the internal components easy to test
-- I choosed to use Sagas because i think they match very well with Redux and make it simple to extend funcionalities for future
-- I just added the API key in a .env file, a best solution would be having a env variable in the container, event beeter a service like AWS Secrets Manager to store our API keys
+- I used an approach more close to Atomic design in terms of connect components to Store. I decided to connect only Home and spread props along the component tree. I like this approach because makes the internal components easy to test
+- I choose to use Sagas because i think they match very well with Redux and make it simple to extend functionalities for future
+- I just added the API key in a .env file, a best solution would be having a env variable in the container, even better a service like AWS Secrets Manager to store our API keys
 - Regarding the filter there are so many ways to do. I went to an approach more simple as possible.
     - I really liked this approach https://redux.js.org/recipes/computing-derived-data/ but a little complex to start so i decided to be simple.
-    - Another way could be using a copy of my 'consumers' (like 'filteredConsumers') to always maintaing the top 10 filled.
+    - Another way could be using a copy of my 'consumers' (like 'filteredConsumers') to always maintain the top 10 filled.
 
 #### Tests
 I made SnapShots and Smoke test for the all components
@@ -73,8 +61,3 @@ I made SnapShots and Smoke test for the all components
 
 
 Thanks for the opportunity :)
-
-----------------------------------
-
-
-
