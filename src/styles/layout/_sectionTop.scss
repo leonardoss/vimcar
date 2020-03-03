@@ -1,0 +1,22 @@
+.section-top {
+  padding-top: 16px;
+  .main-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.11;
+    color: $secondary-color;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  @media (min-width: $screen-sm-min) {
+    padding-top: 24px;
+    .main-title {
+      font-size: 36px;
+    }
+  }
+}
+
+.box-filter {
+  text-align: right;
+  margin-bottom: 12px;
+}

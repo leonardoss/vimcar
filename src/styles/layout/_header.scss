@@ -1,0 +1,35 @@
+.header {
+  background: $primary-color;
+  padding: 16px 0;
+  margin: 0 0 24px 0;
+  .title {
+    color: #fff;
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: middle;
+    font-size: 16px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 24px;
+    }
+  }
+}
+
+.pizza {
+  height: 40px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pizza {
+    animation: pizza-spin infinite 20s linear;
+  }
+}
+
+@keyframes pizza-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

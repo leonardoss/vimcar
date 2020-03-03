@@ -1,0 +1,33 @@
+$primary-color: #196eff;
+$secondary-color: #004c6a;
+
+$color-success: #04d14c;
+$color-error: #f13d35;
+$color-waiting: #d1ad04;
+
+$body-bg: #f4f8ff !default;
+$text-color: $secondary-color !default;
+
+$font-family: "Lato", sans-serif;
+$font-weight: 500;
+$font-size: 16px !default;
+$line-height: 140% !default;
+
+$link-color: #000 !default;
+$link-hover-decoration: none !default;
+
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter: 30px !default;
+
+$container-sm: (720px + $grid-gutter) !default;
+$container-md: (940px + $grid-gutter) !default;
+$container-lg: (1160px + $grid-gutter) !default;

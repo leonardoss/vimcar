@@ -1,0 +1,47 @@
+.card {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(25, 110, 255, 0.16);
+  background-color: #fff;
+  margin-bottom: 12px;
+  a {
+    width: 100%;
+    display: flex;
+    padding: 12px 16px;
+    flex-direction: row;
+  }
+  .box-image {
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    text-indent: -9999px;
+  }
+  .box-content {
+    padding: 0 0 0 14px;
+    .title {
+      color: $primary-color;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.11;
+      margin-bottom: 6px;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    a {
+      padding: 14px 36px;
+    }
+    .box-image {
+      height: 160px;
+      width: 160px;
+    }
+    .box-content {
+      padding: 24px 36px 0 36px;
+      .title {
+        font-size: 36px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
